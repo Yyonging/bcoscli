@@ -1,6 +1,6 @@
 bcoscli
 -----
-*** more convenient then the offical skd ***
+*** more convenient then the official sdk ***
 
 easy to use the FISCO-BCOS blockchain for a interactive terminal!  
 
