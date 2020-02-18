@@ -1,8 +1,15 @@
-cod
+bcoscli
 -----
-easy to use the click package to add command for a interactive terminal!
-1. support autocompetation
-2. support arrow up or down for history command
+*** more convenient then the offical skd ***
+
+easy to use the FISCO-BCOS blockchain for a interactive terminal!  
+
+easy to use the FISCO-BCOS blockchain as sdk!  
+
+1. config so easy
+2. support autocompetation
+3. support arrow up or down for history command
+4. colorful
 
 Installing
 -----
@@ -17,10 +24,19 @@ Install and update using `pip`:
 A Simple Example
 -----
 
-.. code-block:: python
-    # use in terminal:
+as terminal just:
+
+
+
     # default rpc port is 8545
-    just: python bcoscli 127.0.0.1:8545
+    
+    python bcoscli 127.0.0.1:8545
+
+as sdk:
+
+.. code-block:: python
+
+
 
     class MyConfig:
 
@@ -29,15 +45,7 @@ A Simple Example
 
     if __name__ == "__main__":
         import bcoscli
-        # use bcoscli as sdk
         # define your config
         bcoscli.set_config(MyConfig)
         print(bcoscli.getClientVersion())
         print(bcoscli.getBlockNumber(11))
-
-        # use bcoscli as terminal tool
-        # define your config
-        bcoscli.Config.HOST_RPC = 'http://192.168.0.107:9545'
-        bcoscli.Config.ECHO = 1 # open terminal ouput, default is 1
-        bcoscli.main()
-
