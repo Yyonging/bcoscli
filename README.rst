@@ -30,7 +30,7 @@ as terminal just:
 
     # default rpc port is 8545
     
-    python bcoscli 127.0.0.1:8545
+    bcoscli 127.0.0.1:8545
 
 as sdk:
 
