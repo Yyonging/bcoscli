@@ -1,3 +1,4 @@
+import sys
 import cod
 
 from .commands import *
@@ -22,3 +23,14 @@ call = call.callback
 sendRawTransaction = sendRawTransaction.callback
 getTransactionByHashWithProof = getTransactionByHashWithProof.callback
 getTransactionReceiptByHashWithProof = getTransactionReceiptByHashWithProof.callback
+
+def init():
+    if len(sys.argv) > 1:
+        if sys.argv[1] in ['--help', '-h']:
+            cod.echo('''usage:
+                bcoscli 127.0.0.1:8545''')
+        else:
+            Config.HOST_RPC = 'http://'+sys.argv[1]
+            main()
+
+__version__ = '0.0.1'
