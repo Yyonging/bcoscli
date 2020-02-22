@@ -2,7 +2,7 @@ from setuptools import find_packages
 from setuptools import setup
 from bcoscli import __version__
 
-with open("README.rst", "r") as fh:
+with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
@@ -23,7 +23,7 @@ setup(
     ],
     python_requires='>=3.6',
     install_requires=[
-        "cod>=0.0.2"
+        "cod>=0.0.3"
     ],
     entry_points={"console_scripts": ["bcoscli = bcoscli:init"]}
 )

@@ -34,7 +34,6 @@ as terminal just:
 
 as sdk:
 
-.. code-block:: python
 
 
 
@@ -49,3 +48,5 @@ as sdk:
         bcoscli.set_config(MyConfig)
         print(bcoscli.getClientVersion())
         print(bcoscli.getBlockNumber(11))
+
+![image](bcoscli.gif)
