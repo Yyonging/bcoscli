@@ -21,6 +21,7 @@ setup(
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
         "Operating System :: OS Independent",
     ],
+    license="Apache License 2.0",
     python_requires='>=3.6',
     install_requires=[
         "cod>=0.0.3"
